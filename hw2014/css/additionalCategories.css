@@ -1,0 +1,51 @@
+#additionalCategories {
+	width:800px;
+	height:800px;
+}
+
+#additionalCategories #hintergruende {
+	padding:15px;
+	background-color:#315072;
+	color:#FFFFFF;
+	height: 150px;	
+	width: 700px;
+	-moz-box-shadow: 0 0 8px black;
+	-webkit-box-shadow: 0 0 8px black;
+	box-shadow: 0 0 8px black;				
+	margin: 30px auto;
+}
+
+#additionalCategories #calendar {
+	padding:15px;
+	background-color:#d3c7ad;
+	height: 240px;	
+	width: 700px;
+	-moz-box-shadow: 0 0 8px black;
+	-webkit-box-shadow: 0 0 8px black;
+	box-shadow: 0 0 8px black;					
+	margin: 30px auto;	
+}
+
+#additionalCategories #verein {
+	width:200px;
+	height:300px;
+	background-color:yellow;
+}
+
+#additionalCategories #spenden {
+	width:200px;
+	height:300px;
+	background-color:yellow;
+}
+
+#additionalCategories #hufepost {
+	width:200px;
+	height:300px;
+	background-color:yellow;
+}
+
+#additionalCategories #kontakt {
+	width:200px;
+	height:300px;
+	background-color:yellow;
+}

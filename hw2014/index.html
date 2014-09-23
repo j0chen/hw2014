@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Lobster+Two:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="fontAwesome/css/font-awesome.min.css">
+		<link rel="stylesheet" href="css/layout.css">
+		<link rel="stylesheet" href="css/background.css">
+		<link rel="stylesheet" href="css/nav.css">
+		<link rel="stylesheet" href="css/mainCategories.css">
+		<link rel="stylesheet" href="css/additionalCategories.css">
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<script>
+			x=0;
+			$(document).ready(function(){
+			//Hoehe des Logos
+	    	  $( window ).resize(function() {
+				$('#logoTable').css('height', $(window).height()-100);
+			  });			  
+			  $('#logoTable').css('height', $(window).height()-100);
+			  
+			//Logo verschwinden, Hintergrund abdunkeln
+			  $(this).scroll(function(){
+			    $("#logoWrap").css('opacity',1-($(window).scrollTop()/($(window).height()/2)));
+			    if (($(window).scrollTop()) < 300) {
+			    	$(".overlay").css('opacity',($(window).scrollTop()/($(window).height()/2)));
+			    } else {
+            		$(".overlay").css('opacity',300/($(window).height()/2));
+        		}
+        	
+        	//Navbar einblenden
+			    if (($(window).scrollTop()) > 30) {
+        			$("#nav").css('opacity',(($(window).scrollTop()-30)/($(window).height()/2)));
+			    } else {
+            		$("#nav").css('opacity',0);
+        		}
+			  });
+			});
+		</script>
+	</head>
+	<body>
+		<img src="images/bg.jpg" class="bg">
+		<div class="overlay"></div>
+		<nav>
+			<div id="nav">
+				<img src="images/logo.png" id="logoSmall">
+			</div>
+		    <div id="nav2">
+				<img src="images/logo.png" id="logoSmall2">
+				<div class="navContainer">Pflanzen &amp; Tiere</div>
+				<div class="navContainer">Menschen &amp; Trachen</div>
+				<div class="navContainer">Wir &amp; unsere Stadt</div>
+				<div class="navContainer" id="btnHintergruende">Hintergr&uuml;nde</div>
+				<div class="navContainer"><i class="fa fa-bars fa-lg"></i></div>
+				<div class="navContainer"><i class="fa fa-calendar fa-lg"></i></div>
+			</div>
+			<div id="interfaces">
+				<span class="fa-stack fa-lg">
+					<i class="fa fa-circle fa-stack-2x"></i>
+					<i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+				</span>
+				<span class="fa-stack fa-lg">
+					<i class="fa fa-circle fa-stack-2x"></i>
+					<i class="fa fa-flickr fa-stack-1x fa-inverse"></i>
+				</span>
+				<span class="fa-stack fa-lg">
+					<i class="fa fa-circle fa-stack-2x"></i>
+					<i class="fa fa-youtube fa-stack-1x fa-inverse"></i>
+				</span>
+				<span class="fa-stack fa-lg">
+					<i class="fa fa-circle fa-stack-2x"></i>
+					<i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+				</span>
+				<span class="fa-stack fa-lg">
+					<i class="fa fa-circle fa-stack-2x"></i>
+					<i class="fa fa-rss fa-stack-1x fa-inverse"></i>
+				</span>
+			</div>
+		</nav>
+		<div id="pageWrap">
+			<div id="logoWrap">
+				<table id="logoTable">
+					<tr>
+						<td>
+							<img src="images/logo2.png" id="logoImg"/>...ein Ort f&uuml;r Menschen, Trachen &amp; Co.							
+						</td>
+					</tr>
+				</table>
+			</div>
+			<div id="contentWrap">
+				<table id="contentTable">
+					<tr>
+						<td>
+							<div class="inner">
+									<a href="#">Pflanzen <span id="big">&amp;</span> Tiere</a><br>
+									<i class="fa fa-newspaper-o fa-lg"></i> Neuigkeiten				
+							</div>							
+						</td>
+						<td>
+							<div class="inner">
+								<a href="#">Menschen <span id="big">&amp;</span> Trachen</a><br>
+								<i class="fa fa-newspaper-o fa-lg"></i> Neuigkeiten
+							</div>							
+						</td>
+						<td>
+							<div class="inner">
+								<a href="#">Wir <span id="big">&amp;</span> unsere Stadt</a><br/>
+								<i class="fa fa-newspaper-o fa-lg"></i> Neuigkeiten
+							</div>								
+						</td>
+					</tr>
+				</table>
+				<table id="contentTable2">
+					<tr>
+						<td>
+							<table id="interfaces2">
+								<tr>
+									<td class="alignLeft">
+										Das liebe Geld<br/>
+										 <i class="fa fa-money fa-lg fa-fw"></i>Spenden
+									</td>
+									<td class="alignLeft">
+										Rundbrief abonnieren<br/>
+										 <i class="fa fa-envelope fa-lg fa-fw"></i>HufePost
+									</td>
+									<td class="alignLeft">
+										Mitglied werden<br/>
+										<i class="fa fa-pencil-square-o fa-lg fa-fw"></i>Hufewiesen e.V.
+									</td>
+									<td class="alignLeft">
+										Fragen? Anregungen!<br/>
+										 <i class="fa fa-at fa-lg fa-fw"></i>Kontakt
+									</td>
+								</tr>
+							</table>
+						</td>
+						<td rowspan="2">
+							<div id="termine">
+								<a href="#">Termine</a><br/>
+							</div>
+						</td>						
+					</tr>
+					<tr>
+						<td>
+							<div id="hintergruende">
+								<img src="images/verboten.png"/><a href="#">Hintergr&uuml;nde</a><br/>
+							</div>	
+						</td>
+					</tr>
+				</table>
+				Impressum
+			</div>
+		</div>
+	</body>
+</html>

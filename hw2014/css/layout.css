@@ -1,0 +1,94 @@
+#pageWrap {
+	width:1000px;
+	margin: 0px auto;
+	z-index: 3000;
+}
+#logoWrap {
+	z-index: 3000;
+	font-family: 'Lobster', cursive;
+	font-size: 27px;
+	color: #ff5a00;
+	-moz-text-shadow: 0 0 12px white;
+	-webkit-text-shadow: 0 0 12px white;
+	text-shadow: 0 0 12px white;
+}
+#pageWrap {
+	z-index: 3000;
+}
+#contentWrap {
+	text-align: center;
+	color: #fff;
+	font-family: 'Oswald', sans-serif;
+}
+table#logoTable {
+	text-align:center;
+	height: 2000px;
+	width: 100%;
+}
+#logoImg {
+
+}
+table#contentTable {
+	z-index: 2000;
+	width: 100%;
+}
+table th td #contentTable{
+	border: 0px solid black;
+}
+.inner {
+	width:290px;
+	height: 280px;
+	color: #fff;
+	background-color: #95c11f;
+	-moz-box-shadow: 0 0 8px black;
+	-webkit-box-shadow: 0 0 8px black;
+	box-shadow: 0 0 8px black;
+	margin: 0px auto;
+	font-family: 'Oswald', sans-serif;
+	text-transform: uppercase;
+	padding: 10px;
+	padding-top: 20px;
+	text-align: center;
+}
+.inner a {
+	text-decoration: none;
+	color: #fff;
+	font-size: 28px;
+}
+table#interfaces2{
+	background-color:#800f24;
+	width: 100%;
+	font-family: 'Open Sans', sans-serif;
+}
+table#interfaces2 tr td{
+	text-align:center;
+}
+.alignLeft {
+	text-align:left;
+}
+#hintergruende {
+	background-color:#315072;
+	width:100%;
+}
+#termine {
+	background-color:#315072;
+	width:100%;	
+}
+#hintergruende a{
+	text-decoration: none;
+	color: #fff;
+	font-size: 28px;	
+}
+#termine a{
+	text-decoration: none;
+	color: #fff;
+	font-size: 28px;
+}
+#big{
+	font-size:28px;
+		font-family: 'Lobster', bold;
+}
+#contentTable2 {
+	width: 600px;
+	margin:0px auto;
+}
